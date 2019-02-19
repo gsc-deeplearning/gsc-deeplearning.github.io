@@ -18,7 +18,7 @@ var events        = require('events')
  * Default options
  */
 var defaultConnectOptions = {
-  keepalive: 10,
+  keepalive: 60,
   protocolId: 'MQTT',
   protocolVersion: 4,
   reconnectPeriod: 1000,
