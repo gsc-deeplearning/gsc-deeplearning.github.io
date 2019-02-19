@@ -66,7 +66,7 @@ function MqttClient(streamBuilder, options) {
   this.incomingStore = this.options.incomingStore || new Store();
 
   // Ping timer, setup in _setupPingTimer
-  this.pingTimer = null;
+  this.pingTimer = 30;
   // Is the client connected?
   this.connected = false;
   // Are we disconnecting?
