@@ -63,6 +63,7 @@
     element.appendChild(string);
     messages.appendChild(element);
     var obj = document.getElementById(messages);
+    if(!obj) return;
     obj.scrollTop = obj.scrollHeight;
   }
 
