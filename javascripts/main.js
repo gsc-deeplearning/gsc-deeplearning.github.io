@@ -62,12 +62,14 @@
     var string = document.createTextNode(message);
     element.appendChild(string);
     messages.appendChild(element);
+    var obj = document.getElementById(messages);
+    obj.scrollTop = obj.scrollHeight;
   }
 
   clearMessages = function() {
     var count = messages.childNodes.length;
     for(var i=0; i<count; i++) {
-      messages.removeChild(messages.lastChild);
+      messages.removeChild(messages.firstChild);
     }
   }
 
