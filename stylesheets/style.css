@@ -29,3 +29,9 @@
 .appendix li {
   list-style-type: none;  
 }
+
+div.messages {
+  overflow: scroll;
+}
+
+
