@@ -27,6 +27,10 @@
       console.log(message);
       appendMessage(message);
     });
+    
+    var obj = document.getElementById('strmqtt');
+    if(!obj) return;
+    obj.scrollTop = 0;
   });
 
   btnDisconnect.addEventListener('click', function(e) {
@@ -44,6 +48,10 @@
     e.preventDefault();
     client && client.subscribe(inputTopicSub.value);
     appendMessage('subscribe -> ' + inputTopicSub.value);
+
+    var obj = document.getElementById('strmqtt');
+    if(!obj) return;
+    obj.scrollTop = 0;
   });
 
   btnUnsubscribe.addEventListener('click', function(e) {
