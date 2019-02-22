@@ -79,7 +79,7 @@ function MqttClient(streamBuilder, options) {
   this._setupStream();
 
   // Ping timer, setup in _setupPingTimer
-  this.pingTimer = 30;
+  this.pingTimer = null; 
   // Is the client connected?
   this.connected = false;
   // Packet queue
