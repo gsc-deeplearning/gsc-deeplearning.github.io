@@ -62,7 +62,7 @@
     var string = document.createTextNode(message);
     element.appendChild(string);
     messages.appendChild(element);
-    var obj = document.getElementById('messages');
+    var obj = document.getElementById('strmqtt');
     if(!obj) return;
     obj.scrollTop = obj.scrollHeight;
   }
