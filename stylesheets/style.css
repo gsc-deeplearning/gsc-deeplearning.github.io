@@ -35,3 +35,7 @@ div.messages {
   overflow: auto;
 }
 
+div.inputarea {
+  height: 100vh;
+  overflow: auto;
+}
