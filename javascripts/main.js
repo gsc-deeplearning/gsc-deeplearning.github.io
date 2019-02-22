@@ -27,10 +27,10 @@
       console.log(message);
       appendMessage(message);
     });
-    
+
     var obj = document.getElementById('strmqtt');
     if(!obj) return;
-    obj.scrollTop = 0;
+    obj.scrollTop;
   });
 
   btnDisconnect.addEventListener('click', function(e) {
@@ -51,7 +51,7 @@
 
     var obj = document.getElementById('strmqtt');
     if(!obj) return;
-    obj.scrollTop = 0;
+    obj.scrollTop;
   });
 
   btnUnsubscribe.addEventListener('click', function(e) {
