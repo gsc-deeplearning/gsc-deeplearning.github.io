@@ -31,6 +31,7 @@
 }
 
 div.messages {
+  height: 80vh;
   overflow: auto;
 }
 
