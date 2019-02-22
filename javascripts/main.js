@@ -67,7 +67,7 @@
   clearMessages = function() {
     var count = messages.childNodes.length;
     for(var i=0; i<count; i++) {
-      messages.removeChild(messages.firstChild);
+      messages.removeChild(messages.lastChild);
     }
   }
 
