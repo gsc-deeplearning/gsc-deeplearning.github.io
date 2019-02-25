@@ -27,6 +27,8 @@
       console.log(message);
       appendMessage(message);
     });
+
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
   });
 
   btnDisconnect.addEventListener('click', function(e) {
@@ -44,6 +46,8 @@
     e.preventDefault();
     client && client.subscribe(inputTopicSub.value);
     appendMessage('subscribe -> ' + inputTopicSub.value);
+
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
   });
 
   btnUnsubscribe.addEventListener('click', function(e) {
@@ -62,6 +66,9 @@
     var string = document.createTextNode(message);
     element.appendChild(string);
     messages.appendChild(element);
+    var obj = document.getElementById('strmqtt');
+    if(!obj) return;
+    obj.scrollTop = obj.scrollHeight;
   }
 
   clearMessages = function() {

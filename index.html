@@ -40,9 +40,11 @@
         
       </ul>
       <!--<div class="l-box-lrg pure-u-2-3">-->
+
       <div>
         <button class="pure-button btn-clear">message clear</button>
       </div>
+   
   </div>
 
 <!--
@@ -96,13 +98,13 @@
 
     <div class="ribbon l-box-lrg pure-g">
 
-      <div class="l-box-lrg pure-u-2-3">
-        <!--<button class="pure-button btn-clear">message clear</button>-->
-        <div class="messages"></div>
+      <!-- <div class="l-box-lrg pure-u-2-3"> -->
+      <div class="pure-u-2-3">
+        <div class="messages" id="strmqtt"></div>
       </div>
 
       <div class="pure-u-1-3">
-
+        <div class="inputarea">
         <form class="pure-form">
 <!--
           <fieldset>
@@ -110,16 +112,19 @@
             <button class="pure-button btn-connect">①connect</button>
             <button class="pure-button btn-disconnect">disconnect</button>
           </fieldset>
--->
+
 <br><br>
+-->
           <fieldset>
           
             <legend>MQTT broker on websocket</legend>
             <label>
 			  Address:
 		      <input type="text" class="input-broker-ws" value="wss://iot.eclipse.org:443/ws"></label>
-		
+<!--
+
             <label>接続 / 切断</label><br>
+-->
             <button class="pure-button btn-connect">①connect</button>
             <button class="pure-button btn-disconnect">disconnect</button>
           </fieldset>
@@ -127,8 +132,7 @@
           <fieldset>
             <legend>Subscribe / Unsubscribe</legend>
             <label>
-              Topic:
-              <input type="text" class="input-topic-sub" value="GLORY/MQTT-Test"></label>
+              Topic:<input type="text" class="input-topic-sub" value="GLORY/MQTT-Test"></label>
             <button class="pure-button btn-subscribe">②subscribe</button>
             <button class="pure-button btn-unsubscribe">unsubscribe</button>
           </fieldset>
@@ -136,16 +140,15 @@
           <fieldset>
             <legend>Publish</legend>
             <label>
-              Topic:
-              <input type="text" class="input-topic-pub" value="GLORY/MQTT-Test"></label>
+              Topic:<input type="text" class="input-topic-pub" value="GLORY/MQTT-Test"></label>
             <label>
-              Message:
-              <input type="text" class="input-message" value="MQTT Test(#^.^#)"></label>
+              Message:<input type="text" class="input-message" value="MQTT Test(#^.^#)"></label>
             <button class="pure-button btn-publish">③publish</button>
           </fieldset>
         </form>
 
       </div>
+    </div>
       </div>
       
 
@@ -158,18 +161,18 @@
         <div class="l-box-lrg pure-u-2-3 appendix">
 	</div>
 -->
-        <div class="l-box-lrg pure-u-1-1"></div>
-
+        <!-- <div class="l-box-lrg pure-u-1-1"></div> -->
       </div>
-
     </div>
 
+<!--
     <div class="footer l-box is-center">
       Created by
       <a href="https://github.com/gsc-deeplearning/">gsciot</a>
       . Design by
       <a href="http://purecss.io/">Pure</a>
     </div>
+-->
 
   </div>
 
